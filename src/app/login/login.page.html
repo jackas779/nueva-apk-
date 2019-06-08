@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>iniciar sesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form (ngSubmit)=login(forma) #forma="ngForm">
+    <ion-card>
+      <img src="assets/icon/halo2.jpg" max-widht=auto max-height=auto>
+      <ion-item>
+        <ion-input placeholder="USUARIO" ngModel #usuario="ngModel" name="usuario" minlength="3"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="CONTRASEÑA" type="password" ngModel #contrasena="ngModel" name="contrasena" minlength="3"></ion-input>
+      </ion-item>
+      <ion-button  type="submit" [disabled]=!forma.valid>  ingresar </ion-button><br>
+      <hr>
+      <ion-button routerLink='home/tabs/tab1'>invitado</ion-button>
+      <ion-button routerLink='home/tabs/tab2'> registro</ion-button>
+
+    </ion-card>       
+  </form>
+
+</ion-content>

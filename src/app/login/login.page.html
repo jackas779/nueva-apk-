@@ -15,10 +15,14 @@
       <ion-item>
         <ion-input placeholder="CONTRASEÑA" type="password" ngModel #contrasena="ngModel" name="contrasena" minlength="3"></ion-input>
       </ion-item>
-      <ion-button  type="submit" [disabled]=!forma.valid>  ingresar </ion-button><br>
+      <ion-button  type="submit" [disabled]=!forma.valid routerLink='home/tabs/tab3'>  ingresar </ion-button><br>
       <hr>
       <ion-button routerLink='home/tabs/tab3'>invitado</ion-button>
+<<<<<<< HEAD
       <ion-button routerLink='/home/tabs/tab2'> registro</ion-button>
+=======
+      <ion-button routerLink='home/tabs/tab2'> registro</ion-button>
+>>>>>>> a69872a7f9919ce7dafc15fbfad28ffc2a385096
 
     </ion-card>       
   </form>

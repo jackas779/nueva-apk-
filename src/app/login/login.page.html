@@ -1,28 +1,26 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>iniciar sesion</ion-title>
-  </ion-toolbar>
+  
 </ion-header>
 
 <ion-content>
 
-  <form (ngSubmit)=login(forma) #forma="ngForm">
+  <form (ngSubmit)=login(forma) #forma="ngForm" class="fondo">
     <ion-card>
-      <img src="assets/icon/halo2.jpg" max-widht=auto max-height=auto>
+      <img src="assets/icon/Google.PNG" max-widht=auto max-height=auto>
       <ion-item>
         <ion-input placeholder="USUARIO" ngModel #usuario="ngModel" name="usuario" minlength="3"></ion-input>
       </ion-item>
       <ion-item>
         <ion-input placeholder="CONTRASEÑA" type="password" ngModel #contrasena="ngModel" name="contrasena" minlength="3"></ion-input>
       </ion-item>
-      <ion-button  type="submit" [disabled]=!forma.valid routerLink='home/tabs/tab3'>  ingresar </ion-button><br>
+      <ion-button  shape='round' type="submit" [disabled]=!forma.valid routerLink='home/tabs/tab3' class='ces' color="medium"><ion-icon name="contact" ></ion-icon>  ingresar </ion-button><br>
       <hr>
-      <ion-button routerLink='home/tabs/tab3'>invitado</ion-button>
-<<<<<<< HEAD
-      <ion-button routerLink='/home/tabs/tab2'> registro</ion-button>
-=======
-      <ion-button routerLink='home/tabs/tab2'> registro</ion-button>
->>>>>>> a69872a7f9919ce7dafc15fbfad28ffc2a385096
+      <ion-button routerLink='home/tabs/tab3' class='izquierda' shape='round' color="medium"><ion-icon name="contacts"></ion-icon>
+        invitado</ion-button>
+
+      <ion-button routerLink='/registro' class='derecha' shape='round' color="medium"> <ion-icon name="logo-freebsd-devil"></ion-icon>registro</ion-button>
+
+
 
     </ion-card>       
   </form>

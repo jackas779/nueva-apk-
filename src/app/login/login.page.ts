@@ -27,7 +27,8 @@ export class LoginPage implements OnInit {
       console.log("ingreso a login");  
       const loading = await this.loadingCtrl.create({
 	        message: 'Validando...',
-	        spinner: 'bubbles'
+          spinner: 'bubbles',
+          duration: 2000
 	      });
 	      loading.present();
 	      //this.user.usuario = forma.value.email;

@@ -44,6 +44,8 @@ export class LoginPage implements OnInit {
       else 
       {
         console.log("falso")
+        message: 'vuelve a intentar';
+        duration: 2000
       }
     }
   }

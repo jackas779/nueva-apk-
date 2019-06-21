@@ -1,15 +1,18 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-title>
-        Invitado
-        
-      </ion-title>
-    </ion-toolbar>
+
   </ion-header>
   
   <ion-content>
   <img src="\assets\Google.PNG" ><br>
-  <ion-button  class="boton" href='http://localhost:8100' color="medium"><ion-icon name="logo-snapchat"></ion-icon>regresar al inicio</ion-button>
-  <ion-button class="izquierda" routerLink='/home/tabs/tab1' color="medium"><ion-icon name="return-left"></ion-icon>salir de la pagina</ion-button>
-  </ion-content>
+
+  <div class="img" style="background-color: blueviolet" vertical="botton" horizontal="center">
+      <ion-fab-button (click)="mostrarpop($event)" routerLink='/infopark'>
+        <ion-icon name="pin"></ion-icon>
+      </ion-fab-button>
+
+    <ion-button  class="boton" href='http://localhost:8100' color="medium"><ion-icon name="logo-snapchat"></ion-icon>regresar</ion-button>
+    <ion-button class="izquierda" routerLink='/home/tabs/tab1' color="medium"><ion-icon name="return-left"></ion-icon>salir</ion-button>
+  </div>
+  
+</ion-content>
   

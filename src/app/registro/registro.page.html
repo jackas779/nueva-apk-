@@ -4,31 +4,31 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="pix" >
-    <form (ngSubmit)=login(forma) #forma="ngForm" class="gg">
+<ion-content  >
+    <form (ngSubmit)=login(forma) #forma="ngForm" class="fondo" >
         <br>
         <br>
         <br>
         <br>
         <br>
         <br>
-      <ion-card>
-        <ion-item>
-          <ion-input placeholder="     NOMBRE DE USUARIO" ngModel #usuario="ngModel" name="usuario" minlength="3"  fill="outline"></ion-input>
+      <ion-card  >
+        <ion-item >
+          <ion-input placeholder="     NOMBRE DE USUARIO" ngModel #usuario="ngModel" name="usuario" minlength="3"  fill="outline" class="l"></ion-input>
         </ion-item>
-        <ion-item > 
-          <ion-input placeholder="     DIGITE SU CORREO" ngModel #correo="ngModel" name="email" minlength="3"> </ion-input>
+        <ion-item  > 
+          <ion-input placeholder="     DIGITE SU CORREO" ngModel #correo="ngModel" name="email" minlength="3" class="l"> </ion-input>
         </ion-item>
-        <ion-item>
-          <ion-input placeholder="     DIGITE CONTRASEÑA" type="password" ngModel #contraseña="ngModel" name="contraseña" minlength="3"></ion-input>
+        <ion-item >
+          <ion-input placeholder="     DIGITE CONTRASEÑA" type="password" ngModel #contraseña="ngModel" name="contraseña" minlength="3" class="l"></ion-input>
         </ion-item>
-        <ion-item>
-          <ion-input placeholder="     DIGITA NOMBRES" ngModel #nombre="ngModel" name="nombres" minlength="3"></ion-input>
+        <ion-item >
+          <ion-input placeholder="     DIGITA NOMBRES" ngModel #nombre="ngModel" name="nombres" minlength="3" class="l"></ion-input>
         </ion-item>
-          <ion-item>
-          <ion-input placeholder="     DIGITA APELLIDOS" ngModel #apellidos="ngModel" name="apellidos" minlength="3"></ion-input>
+          <ion-item >
+          <ion-input placeholder="     DIGITA APELLIDOS" ngModel #apellidos="ngModel" name="apellidos" minlength="3" class="l"></ion-input>
         </ion-item>     
       </ion-card>
-      <ion-button type="submit" [disabled]=!forma.valid  routerLink='/invitado'><ion-icon name="logo-octocat"></ion-icon>REGISTRAR</ion-button>
+      <ion-button type="submit" [disabled]=!forma.valid  routerLink='/' color="medium"><ion-icon name="logo-octocat"></ion-icon>REGISTRAR</ion-button>
     </form>
   </ion-content>
